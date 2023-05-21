@@ -21,7 +21,7 @@ public class TeacherController {
                     break;
                 case "2":
                     System.out.println("删除老师");
-                    delTeaById();
+                    deleteTeacherById();
                     break;
                 case "3":
                     System.out.println("修改老师");
@@ -54,7 +54,7 @@ public class TeacherController {
 
     }
 
-    private void delTeaById() {
+    private void deleteTeacherById() {
         String id = inputTeacherId();
 
         //2.调用业务员中的删除方法,根据id,删除老师
