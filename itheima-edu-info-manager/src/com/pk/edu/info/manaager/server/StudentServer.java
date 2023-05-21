@@ -26,7 +26,7 @@ public class StudentServer {
         return false;
     }
 
-    //查看所有学生信息,若没学生信息返回空值
+    //查看所有学生信息,若没学生信息返回null
     public Student[] findAllStudent() {
         Student[] students = studentDao.findAllStudent();
         for (Student student : students) {

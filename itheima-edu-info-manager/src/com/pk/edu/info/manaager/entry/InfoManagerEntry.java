@@ -22,7 +22,6 @@ public class InfoManagerEntry {
                     new TeacherController().start();
                     break;
                 case "3":
-                    //退出
                     System.out.println("感谢您的使用");
                     System.exit(0);
                 default:
