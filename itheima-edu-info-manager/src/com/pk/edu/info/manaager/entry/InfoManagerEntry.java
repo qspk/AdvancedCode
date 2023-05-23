@@ -1,5 +1,6 @@
 package com.pk.edu.info.manaager.entry;
 
+import com.pk.edu.info.manaager.controller.OtherStudentController;
 import com.pk.edu.info.manaager.controller.StudentController;
 import com.pk.edu.info.manaager.controller.TeacherController;
 import java.util.Scanner;
@@ -15,7 +16,7 @@ public class InfoManagerEntry {
             switch (sc.next()) {
                 case "1":
                     System.out.println("学生管理");
-                    new StudentController().start();
+                    new OtherStudentController().start();
                     break;
                 case "2":
                     System.out.println("老师管理");

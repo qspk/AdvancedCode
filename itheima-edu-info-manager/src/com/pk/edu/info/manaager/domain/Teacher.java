@@ -8,6 +8,10 @@ public class Teacher extends Person{
     public Teacher(String id, String name, String age, String birthday) {
         super(id, name, age, birthday);
     }
+
+
+
+
    /* private String id;
     private String name;
     private String age;
