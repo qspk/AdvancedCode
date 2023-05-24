@@ -1,0 +1,2 @@
+className = fanshe.demo.Student2
+methodName = show2
