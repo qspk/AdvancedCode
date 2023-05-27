@@ -3,7 +3,7 @@ package com.pk.edu.info.manaager.dao;
 import com.pk.edu.info.manaager.domain.Student;
 
 //学生管理Dao层
-public class StudentDao {
+public class StudentDao implements BaseStudentDao{
     //创建存储学生信息的数组
     private final static Student[] students;
 
@@ -11,6 +11,7 @@ public class StudentDao {
     static {
         students = new Student[5];
         students[0] = new Student("heima005", "赵六", "23", "2001-01-22");
+        students[1] = new Student("heima004", "陈七", "25", "1999-01-22");
     }
 
     //添加学生信息

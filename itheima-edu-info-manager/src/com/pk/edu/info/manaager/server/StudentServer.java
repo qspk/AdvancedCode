@@ -1,12 +1,16 @@
 package com.pk.edu.info.manaager.server;
 
-import com.pk.edu.info.manaager.dao.StudentDao;
+import com.pk.edu.info.manaager.dao.BaseStudentDao;
+import com.pk.edu.info.manaager.factory.StudentDaoFactory;
 import com.pk.edu.info.manaager.domain.Student;
 
 //学生管理Server层
 public class StudentServer {
     //1.创建库管对象
-    StudentDao studentDao = new StudentDao();
+//    private OtherStudentDao studentDao = new OtherStudentDao();
+
+    //通过学生库管工厂类获得学生库管对象
+    private final BaseStudentDao studentDao = StudentDaoFactory.getStudentDao();
 
 
     public boolean addStudent(Student student) {
