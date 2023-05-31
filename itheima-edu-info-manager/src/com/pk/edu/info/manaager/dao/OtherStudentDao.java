@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 //学生管理Dao层
 public class OtherStudentDao implements BaseStudentDao{
-    //创建存储学生信息的数组
+    //创建存储学生信息的集合
     private final static ArrayList<Student> students = new ArrayList<>();
 
     //初始化数组(static只初始化一次 )
